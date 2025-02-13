@@ -1,15 +1,20 @@
 {
+  
   "name": "it35lab",
   "private": true,
   "version": "0.0.1",
   "type": "module",
+  "homepage": "https://angelqtypie.github.io/it35lab/",
   "scripts": {
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test.e2e": "cypress run",
     "test.unit": "vitest",
     "lint": "eslint"
+  
   },
   "dependencies": {
     "@capacitor/app": "7.0.0",
